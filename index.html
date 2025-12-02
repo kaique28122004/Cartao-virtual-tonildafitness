@@ -4,16 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão Virtual</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Seu CSS externo -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Importando a fonte DMSans do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        /* Aplicando a fonte DMSans em todo o corpo da página */
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        /* Imagem da proprietária */
+        .card img.tonilda-img {
+            width: 60%; /* Mesmo tamanho que você usou no background-size */
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto 20px auto; /* Centraliza a imagem e adiciona margem inferior */
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Estilizando a descrição e os botões */
+        .desc {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            background-color: deeppink;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-family: 'DM Sans', sans-serif; /* Garante que os links também usem a fonte */
+        }
+
+        .buttons a:hover {
+            background-color: #ff69b4;
+        }
+    </style>
 </head>
 <body>
 <div class="card">
 
-    <p class="desc">contatos: </p>
+    <img
+            src="tonildafitness.png"
+            alt="Foto da Proprietária Tonilda"
+            class="tonilda-img"
+    >
+
+    <p class="desc">Contatos:</p>
 
     <div class="buttons">
         <a href="https://wa.me/85992010104" target="_blank">Atendente Gaby</a>
-        <a href="https://wa.me/5585991945940" target="_blank">Proprietaria Tonilda</a>
+        <a href="https://wa.me/5585991945940" target="_blank">Proprietária Tonilda</a>
         <a href="https://wa.me/558599194" target="_blank">Grupo Vip</a>
         <a href="https://maps.app.goo.gl/N24HLc4gofrDLpnp8" target="_blank">Localização</a>
     </div>
