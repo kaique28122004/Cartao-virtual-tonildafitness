@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    position: relative;
+    width: 360px;   /* aumentei um pouco a largura */
+    height: 520px;  /* aumentei altura para mostrar mais da imagem */
+    padding: 20px;
+    text-align: center;
+
+    /* Fundo com gradiente e imagens */
+    background-image:
+            linear-gradient(rgba(255, 0, 128, 0.55), rgba(255, 0, 128, 0.55)),
+            url("tonildafitness.png"),
+            url("https://images.pexels.com/photos/17917173/pexels-photo-17917173.jpeg");
+
+    background-size:
+            cover,      /* gradiente */
+            240px auto, /* imagem pequena */
+            cover;      /* imagem de fundo */
+
+    background-position:
+            center,
+            center 200px, /* ajusta a posição vertical da imagem pequena */
+            center;
+
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* coloca os botões mais para baixo */
+    padding-bottom: 40px;      /* espaçamento inferior dos botões */
+}
+
+.buttons a {
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.buttons a:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
